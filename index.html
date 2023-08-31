@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <input id="display" type="text" disabled >
+        <div class="grid">
+            <button class="operadores" onclick= "limpaDisplay()">AC</button>
+            <button onclick = "toggleSign('+/-')" class="operadores">+/-</button>
+            <button onclick = "calculatePercentage('%')" class="operadores">%</button>
+            <button onclick = "appendToDisplay('/')" class="operadores">/</button>
+            <button onclick = "appendToDisplay('7')" class="num">7</button>
+            <button onclick = "appendToDisplay('8')" class="num">8</button>
+            <button onclick = "appendToDisplay('9')" class="num">9</button>
+            <button onclick = "appendToDisplay('*')" class="operadores">x</button>
+            <button onclick = "appendToDisplay('4')" class="num">4</button>
+            <button onclick = "appendToDisplay('5')" class="num">5</button>
+            <button onclick = "appendToDisplay('6')" class="num">6</button>
+            <button onclick = "appendToDisplay('-')" class="operadores">-</button>
+            <button onclick = "appendToDisplay('1')" class="num">1</button>
+            <button onclick = "appendToDisplay('2')" class="num">2</button>
+            <button onclick = "appendToDisplay('3')" class="num">3</button>
+            <button onclick = "appendToDisplay('+')" class="operadores">+</button>
+            <button onclick = "appendToDisplay('0')" class="num">0</button>
+            <button onclick = "appendToDisplay('.')"class="operadores">.</button>
+            <button class="operadores" onclick= "clearDisplay()">C</button>
+            <button class="operadores" onclick= "calculate()">=</button>
+        </div>
+    </div>
+    <script src= "script.js"> </script>
+
+    
+    
+</body>
+</html>
